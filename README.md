@@ -19,33 +19,34 @@ espiritual de cada postulante.
 
 ## 📁 Estructura del Proyecto
 
+```text
 lib/
-├── main.dart                    ← Punto de entrada (solo configura y llama a App)
-├── app.dart                     ← Widget raíz de la app (MaterialApp, tema)
+├── main.dart                    ← Punto de entrada
+├── app.dart                     ← Widget raíz (MaterialApp, tema)
 ├── config/
-│   ├── routes.dart              ← Definición de rutas de navegación
-│   └── theme.dart               ← Colores, fuentes, estilos globales
+│   ├── routes.dart              ← Rutas de navegación
+│   └── theme.dart               ← Colores y estilos globales
 ├── models/
-│   ├── usuario.dart             ← Modelo de Usuario (postulante/empresario)
-│   ├── vacante.dart             ← Modelo de Vacante/Oferta laboral
+│   ├── usuario.dart             ← Modelo de Usuario
+│   ├── vacante.dart             ← Modelo de Vacante
 │   └── postulacion.dart         ← Modelo de Postulación
 ├── services/
-│   ├── auth_service.dart        ← Lógica de autenticación
-│   ├── api_service.dart         ← Llamadas HTTP al backend
-│   └── storage_service.dart     ← Almacenamiento local (tokens, preferencias)
+│   ├── auth_service.dart        ← Autenticación
+│   ├── api_service.dart         ← Llamadas HTTP
+│   └── storage_service.dart     ← Almacenamiento local
 ├── screens/
-│   ├── login_screen.dart        ← Pantalla de inicio de sesión
-│   ├── registro_screen.dart     ← Pantalla de registro
-│   ├── home_postulante.dart     ← Home del postulante (buscar vacantes)
-│   ├── home_empresario.dart     ← Home del empresario (publicar/gestionar)
-│   └── detalle_vacante.dart     ← Detalle de una vacante
+│   ├── login_screen.dart        ← Inicio de sesión
+│   ├── registro_screen.dart     ← Registro
+│   ├── home_postulante.dart     ← Home del postulante
+│   ├── home_empresario.dart     ← Home del empresario
+│   └── detalle_vacante.dart     ← Detalle de vacante
 ├── widgets/
-│   ├── vacante_card.dart        ← Tarjeta reutilizable de vacante
+│   ├── vacante_card.dart        ← Tarjeta de vacante
 │   ├── postulante_card.dart     ← Tarjeta de postulante
-│   └── custom_button.dart       ← Botón personalizado con tu estilo
+│   └── custom_button.dart       ← Botón personalizado
 └── utils/
     ├── validators.dart          ← Validaciones de formularios
-    └── constants.dart           ← Constantes (URLs de API, textos fijos)
+    └── constants.dart           ← Constantes de la app
 
 ## 🚀 Empezando
 
