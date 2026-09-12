@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_declare_return_types
+    - avoid_print
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - use_key_in_widget_constructors
+    - unnecessary_const
+    - unnecessary_this
+    - sort_child_properties_last
