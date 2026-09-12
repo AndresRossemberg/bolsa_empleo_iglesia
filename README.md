@@ -47,6 +47,7 @@ lib/
 └── utils/
     ├── validators.dart          ← Validaciones de formularios
     └── constants.dart           ← Constantes de la app
+```
 
 ## 🚀 Empezando
 
