@@ -1,3 +1,4 @@
+import 'package:bolsa_empleo_iglesia/presentation/widgets/custom_button.dart';//Importa el archivo custom_button.dart para usar el widget CustomButton
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -9,7 +10,29 @@ class WelcomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Bienvenido'),
       ),
-      body: const Center(child: Text('Bienvenido a la bolsa de empleo IDEFUP!'))
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('Bienvenido a la bolsa de empleo IDEFUP!'),
+                CustomButton(//Se utiliza el widget CustomButton para crear un botón personalizado = Botón para iniciar sesión
+                  text: 'Iniciar Sesión',//Texto del botón
+                  icon: Icons.login,//Icono del botón
+                  onPressed: () {//Función que se ejecutará al presionar el botón
+                    print('Login');
+                  },
+                ),
+                const SizedBox(height: 10),
+                CustomButton(
+                  text: 'Registrarse',
+                  icon: Icons.person_add,
+                  onPressed: () {
+                    print('Registro');
+                  },
+                ),
+            ],
+          ),
+        ),
     );
   }
 }
