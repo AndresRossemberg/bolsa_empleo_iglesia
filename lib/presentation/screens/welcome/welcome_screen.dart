@@ -5,8 +5,11 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Bienvenido a la bolsa de empleo IDEFUP!'))
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Bienvenido'),
+      ),
+      body: const Center(child: Text('Bienvenido a la bolsa de empleo IDEFUP!'))
     );
   }
 }
