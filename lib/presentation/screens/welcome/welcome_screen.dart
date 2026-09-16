@@ -6,13 +6,13 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    return Scaffold( //Se utiliza el widget Scaffold para crear la estructura básica de la pantalla
+      appBar: AppBar( //Se utiliza para crear la barra de navegación superior
         title: const Text('Bienvenido'),
       ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center, //Se centra el contenido de la columna en el eje vertical
             children: [
               const Text('Bienvenido a la bolsa de empleo IDEFUP!'),
                 CustomButton(//Se utiliza el widget CustomButton para crear un botón personalizado = Botón para iniciar sesión
