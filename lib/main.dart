@@ -1,3 +1,4 @@
+import 'package:bolsa_empleo_iglesia/config/theme/app_theme.dart';
 import 'package:bolsa_empleo_iglesia/presentation/screens/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,15 +13,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.lightBlue,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.lightBlue,
-          foregroundColor: Colors.white,
-          centerTitle: true,
-        )
-      ),
+      theme: AppTheme(selectedColor: 3).theme(),
       home: const WelcomeScreen()
     );
   }
